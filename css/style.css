@@ -1,6 +1,156 @@
-*{
+/* reset styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* set color palette */
+:root {
+    --nvblue: #142850;
+    /*Midnight Navy*/
+    --mtgold: #e5c062;
+    /* --mtgold: #CBB26A; inicial*/
+    /* --mtgold: #ffdc73; */
+    /*Matte Gold*/
+    --bwhite: #FFFFFF;
+    /*Basic White*/
+    --sgrey: #58687E;
+    /*Slate Grey*/
+}
+
+/* set grid and grid areas */
+.grid-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.grid-header{
+    grid-area: header;
+    background-color: var(--nvblue);
+    color: var(--bwhite);
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.grid-main{
+    grid-area: main;
+    min-height: 85vh;
+}
+
+.grid-footer{
+    grid-area: footer;
+    min-height: 5vh;
+    background-color: var(--nvblue); 
+}
+
+.bg-gold {
+    background-color: var(--mtgold);
+}
+
+.bg-nvblue {
+    background-color: var(--nvblue);
+}
+
+.bg-grey{
+    background-color: var(--sgrey);
+}
+
+.bg-white{
+    background-color: var(--bwhite);
+}
+
+.text-nvblue {
+    color: var(--nvblue);
+}
+
+.text-gold {
+    color: var(--mtgold);
+}
+
+.text-grey{
+    background-color: var(--sgrey);
+}
+
+.text-white {
+    color: var(--bwhite);
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.border-green {
+    border: 1px solid green;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+.nav-link{
+    color: var(--bwhite);
+    font-size: 1.2rem;
+}
+
+.nav-link:hover{
+    color: var(--mtgold);
+}
+
+.card{
+    background-color: var(--mtgold);
+    height: 400px;
+}
+
+.testimonial-card {
+    background-color: var(--sgrey);
+    /* height: 100px; */
+    height: 350px;
+}
+
+.testimonial-card img{
+    height: 200px;
+}
+
+.testimonial-card .card-text, .testimonial-card .card-title {
+    color: var(--bwhite);
+}
+
+.img-interior{
+    background-image: url("/images/barber_shop_interior.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+}
+
+/* #testimonials{
+height:500px;
+} */
+
+@media screen and (min-width: 768px){
+
+.testimonial-card {
+    background-color: var(--sgrey);
+    height: 250px;
+}
+
+.testimonial-card img{
+    height: 250px;
+}
+
+}
+
 
