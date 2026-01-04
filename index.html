@@ -94,7 +94,8 @@
                                     <div class="card testimonial-card col-12 mt-4 mb-3">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <img src="./images/barber_avatar_1.png" class="card-img-top" alt="Buzz Cut">
+                                                <img src="./images/barber_avatar_1.png" class="card-img-top"
+                                                    alt="Buzz Cut">
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
@@ -109,13 +110,15 @@
                                     <div class="card testimonial-card col-12 mt-4 mb-3">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <img src="./images/barber_avatar_2.png" class="card-img-top" alt="Buzz Cut">
+                                                <img src="./images/barber_avatar_2.png" class="card-img-top"
+                                                    alt="Buzz Cut">
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Cajó</h5>
-                                                    <p class="card-text">"I don't have hair or a beard, but I like to sit on
-                                                this couch and have a great chat"</p>
+                                                    <p class="card-text">"I don't have hair or a beard, but I like to
+                                                        sit on
+                                                        this couch and have a great chat"</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,12 +128,14 @@
                                     <div class="card testimonial-card col-12 mt-4 mb-3">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <img src="./images/barber_avatar_3.png" class="card-img-top" alt="Buzz Cut">
+                                                <img src="./images/barber_avatar_3.png" class="card-img-top"
+                                                    alt="Buzz Cut">
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Ricky</h5>
-                                                    <p class="card-text">"It’s my first time here and I’m waiting for my turn, but everything looks great."</p>
+                                                    <p class="card-text">"It’s my first time here and I’m waiting for my
+                                                        turn, but everything looks great."</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -198,10 +203,33 @@
             </div>
         </section>
     </main>
-    <footer class="grid-footer text-white d-flex justify-content-center align-items-end p-1">
-        <p class="m-0">&copy;2026 The Barber Shop. All rights reserved.</p>
+    <footer class="grid-footer text-white d-flex flex-column justify-content-center align-items-center p-1">
+        <div>Avatars from getavataaars.com</div>
+        <div>
+            Images from unsplash.com
+            <button type="button" class="btn btn-credits" data-bs-toggle="tooltip" data-bs-html="true"
+                data-bs-title='Photo by <a href="https://unsplash.com/@snipi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">František Čaník</a> on <a href="https://unsplash.com/photos/a-barber-shop-with-a-brick-wall-and-lots-of-chairs-tX5JNBNSJic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                </br>
+                Photo by <a href="https://unsplash.com/@itspminhai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Hai Phung</a> on <a href="https://unsplash.com/photos/person-using-white-hair-clipper-m4Pd_e-4zKs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                </br>
+                Photo by <a href="https://unsplash.com/@seteph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Allef Vinicius</a> on <a href="https://unsplash.com/photos/man-sitting-on-barbers-chair-IvQeAVeJULw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                </br>
+                Photo by <a href="https://unsplash.com/@theshuttervision?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Jonathan Cooper</a> on <a href="https://unsplash.com/photos/person-holding-white-and-gold-hair-comb-sS3qRFsKZlg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg>
+            </button>
+        </div>
+        <div>&copy;2026 The Barber Shop. All rights reserved.</div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

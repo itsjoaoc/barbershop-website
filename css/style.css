@@ -40,8 +40,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .grid-main {
@@ -55,6 +55,7 @@
     background-color: var(--nvblue);
 }
 
+/*set background and text colors*/
 .bg-gold {
     background-color: var(--mtgold);
 }
@@ -99,6 +100,7 @@
     border: 1px solid green;
 }
 
+/*nav bar*/
 .navbar-brand {
     font-size: 1.8rem;
 }
@@ -112,6 +114,7 @@
     color: var(--mtgold);
 }
 
+/*cards*/
 .card {
     background-color: var(--mtgold);
     height: 400px;
@@ -136,6 +139,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 350px;
+}
+
+.btn-credits {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    /* keeps text color from parent */
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
