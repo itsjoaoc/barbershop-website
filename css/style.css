@@ -135,7 +135,7 @@
 }
 
 .img-interior {
-    background-image: url("/images/barber_shop_interior.jpg");
+    background-image: url("../images/barber_shop_interior.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 350px;
